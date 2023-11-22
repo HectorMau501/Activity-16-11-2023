@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgAccesorio"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/producto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/accesorio01"
+            />
+
+        <TextView
+            android:id="@+id/txtAccesorio"
+            android:layout_width="229dp"
+            android:layout_height="52dp"
+            android:autofillHints=""
+            android:text="@string/accesorio"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgAccesorio"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="LabelFor, DuplicateSpeckableTextCheck, VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/txtMarca"
+            android:layout_width="229dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="1dp"
+            android:text="@string/marca"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgAccesorio"
+            app:layout_constraintTop_toBottomOf="@+id/txtAccesorio"
+            tools:ignore="LabelFor, DuplicateSpeckableTextCheck, VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/txtModelo"
+            android:layout_width="229dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="19dp"
+            android:text="@string/modelo"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imgAccesorio"
+            app:layout_constraintTop_toBottomOf="@+id/txtMarca"
+            tools:ignore="LabelFor, DuplicateSpeckableTextCheck, VisualLintBounds" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

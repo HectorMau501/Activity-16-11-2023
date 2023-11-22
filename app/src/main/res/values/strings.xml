@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mov1_ReciclerView</string>
+    <string name="producto">Listado de Productos</string>
+    <string name="accesorio">Accesorio</string>
+    <string name="marca">Marca</string>
+    <string name="modelo">Modelo</string>
+    <string name="costo">Costo</string>
+</resources>
